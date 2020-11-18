@@ -16,6 +16,12 @@ Or if you prefer to use it as a library.
 $ npm install -d --save huaming
 ```
 
+Or you can link source project to global
+
+```sh
+npm link [--force]
+```
+
 ## CLI
 
 If you installed it as a CLI in global, you may use it like this:
