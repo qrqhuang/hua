@@ -19,6 +19,12 @@ if(Hua.EXIST_SOURCE.indexOf(program.source) < 0) {
 var hua = new Hua(program);
 var result = hua.generate();
 
+
 for(var i = 0; i < result.length; i++) {
-    console.log(" *", result[i], "--", result[i]._meta.author, "《" + result[i]._meta.title + "》");
+   let data = {
+        "name": result[i].toString(),
+        "author": result[i]._meta.author,
+        "title": result[i]._meta.title
+    }
+    console.log(JSON.stringify(data))
 }

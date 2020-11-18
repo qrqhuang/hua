@@ -34,3 +34,7 @@ node_modules
 
 # Vim temp file
 *.swp
+
+# ide
+.history
+.idea
